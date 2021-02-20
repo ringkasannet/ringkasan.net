@@ -1,0 +1,142 @@
+
+body{
+    background-color: #cac7c7;
+    color:#595959;
+    font-family: 'GFS Didot', serif;
+    font-weight: normal;
+}
+
+html,body,.mainContainer {
+    max-width:1000px;
+    margin-left:auto;margin-right:auto;
+}
+
+h1,h2,h3,h4,p{
+    margin:0;
+    font-weight:normal;
+}
+h1{
+    font-weight: lighter;
+}
+h3{
+    margin: 1vh 0 1vh 0vh; 
+}
+h4{
+    margin: 0 0 1vh 0vh;
+
+}
+p{
+    line-height: 1.1rem;
+}
+a{
+    text-decoration:none;
+    color:#595959;
+}
+.mainContainer{
+    padding: 2vh 4vh 2vh 4vh;
+    background-color: #F4F0F0;
+}
+.issueContainer{
+    padding:0 0 4vh 0;
+}
+.issueItem{
+    flex-direction: row;
+    margin: 0 0 5vh 0;
+
+}
+
+.header{
+    text-align: center;
+    margin: 0;
+    padding: 0 0 1vh 0;
+    /* border-bottom: grey solid 0.2vh; */
+    /* width:80%; */
+    margin-left:auto; margin-right:auto; 
+
+}
+.title{
+
+}
+.noteHeader{
+    margin: 0 0 4vh 0vh;
+    padding: 0vh 0 2vh 0;
+    border-bottom: grey solid 0.1vh;
+    border-top: grey solid 0.1vh;
+    width:90%;
+    margin-left:auto; margin-right:auto; 
+
+}
+
+
+.issue{
+    width:60%;
+    border-bottom: #DD5C5C solid 0.8vh;
+    margin: 0 0 2vh 0vh;
+}
+
+.underConstruction{
+    width:95%;
+    margin-left:auto; margin-right:0; 
+    padding: 0 0 1vh 0;
+    border-bottom: solid rgb(221, 221, 221) 2px;
+    font-style:italic;
+}
+
+.iframeContainer{
+    width:95%;
+    margin-left:auto; margin-right:0; 
+}
+.iframeContainer iframe{
+    height: calc(80vw * 500 / 640);
+    border:none;
+    border-top: solid lightgrey 2px;
+    border-bottom: solid lightgrey 2px;
+    pointer-events: none
+}
+
+.logo{
+    max-height:10vh;
+}
+
+@media only screen and (min-width:700px){
+    .noteHeader{
+        /* margin: 0 0 4vh 0vh; */
+        /* padding: 0vh 0 2vh 0; */
+        width:95%;
+        border-bottom: grey solid 0.1vh;
+        border-top: grey solid 0.1vh;
+        margin-top:5vh; margin-bottom:5vh;
+        margin-left:auto; margin-right:auto; 
+    
+    }
+    .issueContainer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .issueBlank{
+        flex:1;
+        margin-left:3vh;
+        margin-left:3vh;
+    }
+    .issueExist{
+        flex:1;
+        margin-left: 3vh;
+    }
+    .issueItem{
+        margin: 0 0 10vh 0;
+        /* margin: 0  5vh 0 5vh; */
+        /* padding:  0 50px; */
+    }
+    .iframeContainer iframe{
+        height: calc(30vw * 500 / 640);
+        border:none;
+        border-top: solid lightgrey 2px;
+        border-bottom: solid rgb(233, 232, 232) 2px;
+        pointer-events: none
+    }
+    .logo{
+        max-height:15vh;
+    }
+    }
+    

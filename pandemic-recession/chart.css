@@ -1,0 +1,108 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100vh;
+    font-family: 'GFS Didot', serif;    
+    background-color: #cac7c7;
+
+}
+a{
+    text-decoration:none;
+}
+p{
+    margin:1vh 0vh;
+    /* font-family:Helvetica; */
+    color:#595959;
+    line-height:3vh;
+}
+
+
+.header{
+    margin:0;
+    border-bottom: grey solid 0.1vh;
+    width:97%;
+    margin-left:auto; margin-right:auto;
+}
+
+
+
+.ringkasanLogo{
+    background-color: #F4F0F0;
+    color:#595959;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-weight: normal;
+    margin:0;
+    padding:10px;
+    font-size:7vw;
+    /* border-top:solid #ea5547 2vh;
+    border-bottom:solid #ea5547 1vh; */
+    text-align:center;
+
+    /* margin:10px; */
+}
+
+h1.ringkasanLogo{
+    padding:1.2vh;
+    margin:0;
+    font-weight: normal;
+}
+
+.active{
+    border-left:solid #ea5547 1vh;
+    padding: 0 0 0 1vh; 
+
+    /* margin:0 2vh 0 0vh; */
+}
+.mainContainer{
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+    position:fixed;
+    top:0px;
+    overflow:hidden;
+    background-color: #F4F0F0;
+
+}
+.animationContainer{
+    flex:1;
+}
+.iframeAnimation{
+    width:100%;
+    height:100%;
+}
+
+.paraContainer{
+    flex:1;
+    overflow: scroll;
+}
+
+.para{
+    /* margin:1vh 2vh 0 1vh; */
+    /* padding: 0 0 0 1vh; */
+    margin: 2vh 2vh 0 2vh;
+}
+
+.lastPara{
+    min-height: 100%;
+}
+
+@media only screen and (min-width:700px){
+.contentContainer{
+    display:flex;
+    flex-direction: row;
+}
+.animationContainer{
+    flex:1;
+}
+.iframeAnimation{
+    /* height:70vh; */
+    /* width:50vw; */
+    border:none;
+}
+
+.paraContainer{
+    flex:1;
+}
+}
